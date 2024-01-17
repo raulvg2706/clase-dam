@@ -50,8 +50,16 @@ public class Alumno {
     public String getNombreUsuarioGithub() {
         return nombre.substring(0, 3) + numeroMatricula.substring(0, 4);
     }
-    
+
     public boolean esMayorDeEdad() {
         return edad >= 18;
+    }
+
+    public void mostrarSiEsMayorDeEdad() {
+        if (edad >= 18) {
+            System.out.println(nombre + " es mayor de edad.");
+        } else {
+            System.out.println(nombre + " no es mayor de edad.");
+        }
     }
 }
