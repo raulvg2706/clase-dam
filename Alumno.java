@@ -11,7 +11,7 @@ public class Alumno {
      * Crea un alumno nuevo
      */
     public Alumno(String nombreCompleto, String numeroMatriculaAlumno, int edadAlumno) {
-        nombre = nombreCompleto;
+            nombre = nombreCompleto;
             numeroMatricula = numeroMatriculaAlumno;
             edad = edadAlumno;
         if (nombreCompleto.length() < 3) {
