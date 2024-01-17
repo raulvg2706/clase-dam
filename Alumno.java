@@ -11,12 +11,11 @@ public class Alumno {
      * Crea un alumno nuevo
      */
     public Alumno(String nombreCompleto, String numeroMatriculaAlumno, int edadAlumno) {
-        if (nombreCompleto.length() < 3) {
-            System.err.println("Error: La longitud del nombre del alumno debe ser al menos tres caracteres.");
-        } else {
-            nombre = nombreCompleto;
+        nombre = nombreCompleto;
             numeroMatricula = numeroMatriculaAlumno;
             edad = edadAlumno;
+        if (nombreCompleto.length() < 3) {
+            System.err.println("Error: La longitud del nombre del alumno debe ser al menos tres caracteres.");
         }
         if (numeroMatriculaAlumno.length() < 4) {
             System.err.println("Error: La longitud del número de matrícula del alumno debe ser al menos cuatro caracteres.");
