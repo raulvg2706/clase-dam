@@ -19,7 +19,8 @@ public class Alumno {
         }
         if (numeroMatriculaAlumno.length() < 4) {
             System.err.println("Error: La longitud del número de matrícula del alumno debe ser al menos cuatro caracteres.");
-        } else {
+        } 
+        else {
             numeroMatricula = numeroMatriculaAlumno;
         }
     }
